@@ -31,7 +31,7 @@ public class UserDto implements Serializable {
   private String bizDateStr;
   private User user;
   private Date loginTimeAppServer;
-  private String cashier;
+  private int cashier;
 
   public App getApp() {
     return app;
@@ -185,11 +185,11 @@ public class UserDto implements Serializable {
     this.loginTimeAppServer = loginTimeAppServer;
   }
 
-  public String getCashier() {
+  public int getCashier() {
     return cashier;
   }
 
-  public void setCashier(String cashier) {
+  public void setCashier(int cashier) {
     this.cashier = cashier;
   }
 
